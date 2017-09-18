@@ -44,12 +44,12 @@ $( document ).ready(function() {
     }
     </script>
 		
-		<title>Register Form</title>
+		<title>Add Product</title>
 
     <meta charset="utf-8">
     <meta name="robots" content="noindex">
 
-    <title>Register Page</title>
+    <title>Add product Page</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <style type="text/css">
@@ -118,7 +118,7 @@ input::-webkit-input-placeholder {
 
 body{
 margin:0; 
-background:url('http://www.quzhuo.com/news/UploadPic/2013-8/20138591154830.jpg');
+background:url('https://cellphones.com.vn/sforum/wp-content/uploads/2016/09/design_hero_large_2x.jpg');
 background-size:cover;
 }
 
@@ -128,65 +128,62 @@ background-size:cover;
 			<div class="row main">
 				<div class="panel-heading">
 	               <div class="panel-title text-center">
-	              	  <h3><font color="SILVER">Register Here</font></h3>
+	              	  <h3><font color="SILVER">Add Product</font></h3>
 	               		<hr />
 	               	</div>
 	            </div> 
 				<div class="main-login main-center">
-					<form:form action="Register" commandName="Register" method="POST" onsubmit="return validate">
+					<form:form action="AddProduct" commandName="AddProduct" method="POST" onsubmit="return validate">
 						
-						<div class="form-group">
-							<label >Enter your Name</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-									<form:input type="text" class="form-control" name="name" id="name"  placeholder="Name" path="name" />
-								</div>
-							</div>
-						</div>
-							
+				
 									
 
 						<div class="form-group">
-							<label >Enter your Email</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-									<form:input type="text" class="form-control" name="email" id="email"  placeholder="Email ID" path="email" />
-								</div>
-							</div>
-						</div>
-                           
-						
-
-						<div class="form-group">
-							<label >Enter Password</label>
+							<label >Enter Product Name</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<form:input type="password" class="form-control" name="pwd" id="pwd"  placeholder=" Password" path="password"/>
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label >Enter Confirm Password</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="password" class="form-control" name="last_name" id="cpwd"  placeholder=" Confirm Password " path="confirmpassword"/>
+									<form:input type="text" class="form-control" name="product name" id="product name"  placeholder="product name" path="pname"/>
 								</div>
 							</div>
 						</div>
 						
+
+						<div class="form-group">
+							<label >Enter Brand </label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<form:input type="text" class="form-control" name="brand" id="brand"  placeholder=" brand" path="brand"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label >Enter Product Price</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<form:input type="text" class="form-control" name="pprice" id="pprice"  placeholder="price" path="pprice"/>
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label >Enter Product Description</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<form:input type="text" class="form-control" name="pdesc" id="pdesc"  placeholder="description" path="pdesc"/>
+								</div>
+							</div>
+						</div>
 						
 
 						<div class="form-group ">
-							<form:button style="background-color:#000000" type="submit" class="btn btn-primary btn-lg btn-block login-button">Register</form:button>
+							<form:button style="background-color:#000000" type="submit" class="btn btn-primary btn-lg btn-block login-button">Add</form:button>
 						</div>
-						<div class="login-register">
-				            <a href=login.jsp">Login</a>
-				         </div>
+						
 					</form:form>
 				</div>
 			</div>
