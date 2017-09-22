@@ -1,188 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>GALAXY MOBILE WORLD </title>
-<h2 style="font-family:Comic Sans MS;"><font color="RED"><center>GALAXY MOBILE WORLD</center></font></h2>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-
-.nav{
-width:100%;
-background:#000033;
-height:100px;
-margin-top:5px;
-opacity:0.6;
-}
-ul {
-list-style:none;
-padding:0;
-margin:0;
-position:absolute;
-}
-li{
-float:left;
-margin-top:30px;
-}
-a{
-width:150px;
-color:white;
-display:block;
-text-decoration:none;
-font-size:20px;
-text-align:center;
-padding:10px;
-border-radius:10px;
-font-family:Century Gothic;
-font-weight:bold;
-}
-a:hover{
-background:#669900;
-transition:0.8s;
-}
-
-
-* {box-sizing:border-box}
-body {font-family: Verdana,sans-serif;}
-.mySlides {display:none}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-</style>
+  <title>GALAXY MOBILE WORLD</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-
 <nav class="navbar navbar-inverse">
-<div class="container-fluid">
-<div class="navbar-header">
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNvabar"></button></div>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.jsp">Galaxy Mobile World</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.jsp">Home</a></li>
+      <li><a href="Aboutus">About Us</a></li>
+      <li><a href="Contactus">Contact Us</a></li>
+      <li><a href="Admin">Admin</a></li>
+      <li><a href="AddProduct">Add Product</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="Register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="Login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
 </nav>
-<div class ="nav">
-<ul>
-<li> <a href ="index.jsp"> Home</a></li>
-<li> <a href ="Aboutus">About Us</a></li>
-<li> <a href ="Contactus">Contact Us</a></li>
-<li> <a href ="Login">Log In</a></li>
-<li> <a href ="Register">Register</a></li>
-<li> <a href ="Admin">Admin</a></li>
-<li> <a href ="AddProduct">Add Product</a></li>
-</ul>
+  
+<div class="container">
+ <h2 style="font-family:Chiller;"><font color="Black"><center>GALAXY MOBILE WORLD</center></font></h2>
+  </div>
+
+
+<div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+       <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="http://media.idownloadblog.com/wp-content/uploads/2016/09/iPhone-7-wallpaper-desktop-design_hero_large.jpg" alt="Apple" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>APPLE</h3>
+          <p> Awsome Apple Iphone</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="http://images.fonearena.com/blog/wp-content/uploads/2015/03/s6edgecolours2.jpg" alt="Samsung" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>SAMSUNG</h3>
+          <p> Stuning Samsung</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="http://www.wp7connect.com/wp-content/uploads/2013/07/concept-lumia1025-1.jpg" alt="Nokia" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>NOKIA</h3>
+          <p>Newastic Nokia </p>
+        </div>
+      </div>
+
+     <div class="item">
+        <img src="http://cdn.ndtv.com/tech/images/oppo_r7_plus_frint_rear_1.jpg" alt="Oppo" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>OPPO</h3>
+          <p>Selfie Oppo</p>
+        </div>
+      </div>
+    
+     <div class="item">
+        <img src="https://o.aolcdn.com/images/dims?crop=1600%2C900%2C0%2C0&quality=85&format=jpg&resize=1600%2C900&image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2Fbff693ad21897889ac2850a7e541d60b%2F205614220%2FDSC01068.jpg&client=a1acac3e1b3290917d92&signature=2a6c5bceeb5c97aea49807528a50d5800f694c5b" alt="Sony" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>SONY</h3>
+          <p>Stuning Sony</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 </div>
 
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="http://media.idownloadblog.com/wp-content/uploads/2016/09/iPhone-7-wallpaper-desktop-design_hero_large.jpg" style="width:100%">
-  <div class="text">Apple</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="http://images.fonearena.com/blog/wp-content/uploads/2015/03/s6edgecolours2.jpg" style="width:100%">
-  <div class="text">Samsung</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="http://www.wp7connect.com/wp-content/uploads/2013/07/concept-lumia1025-1.jpg" style="width:100%">
-  <div class="text">Nokia</div>
-</div>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
-
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
-<h3 style="font-family:Harrington;"><center><font color="GOLD"> ONLINE MOBILE PHONE STORE </font></center></h3>
 
 </body>
-</html> 
+</html>

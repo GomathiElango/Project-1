@@ -139,7 +139,7 @@ background-size:cover;
 							<label >Enter your Name</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<span class="input-group-addon"><i class="fa fa-user fa " aria-hidden="true"></i></span>
 									<form:input type="text" class="form-control" name="name" id="name"  placeholder="Name" path="name" />
 								</div>
 							</div>

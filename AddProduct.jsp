@@ -142,7 +142,7 @@ background-size:cover;
 							<label >Enter Product Name</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<span class="input-group-addon"><i class="fa fa-product-hunt" aria-hidden="true"></i></span>
 									<form:input type="text" class="form-control" name="product name" id="product name"  placeholder="product name" path="pname"/>
 								</div>
 							</div>
@@ -153,7 +153,7 @@ background-size:cover;
 							<label >Enter Brand </label>
 							<div class="cols-sm-10">
 								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<span class="input-group-addon"><i class="fa fa-mobile" aria-hidden="true"></i></span>
 									<form:input type="text" class="form-control" name="brand" id="brand"  placeholder=" brand" path="brand"/>
 								</div>
 							</div>
@@ -163,7 +163,7 @@ background-size:cover;
 							<label >Enter Product Price</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<span class="input-group-addon"><i class="fa fa-inr" aria-hidden="true"></i></span>
 									<form:input type="text" class="form-control" name="pprice" id="pprice"  placeholder="price" path="pprice"/>
 								</div>
 							</div>
@@ -173,7 +173,7 @@ background-size:cover;
 							<label >Enter Product Description</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<span class="input-group-addon"><i class="fa fa-file-text" aria-hidden="true"></i></span>
 									<form:input type="text" class="form-control" name="pdesc" id="pdesc"  placeholder="description" path="pdesc"/>
 								</div>
 							</div>
