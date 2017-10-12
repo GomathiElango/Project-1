@@ -21,6 +21,7 @@
       <li><a href="Contactus">Contact Us</a></li>
       <li><a href="Admin">Admin</a></li>
       <li><a href="AddProduct">Add Product</a></li>
+       <li><a href="View">View</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="Register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -68,7 +69,7 @@
         <img src="http://www.wp7connect.com/wp-content/uploads/2013/07/concept-lumia1025-1.jpg" alt="Nokia" style="width:100%;">
         <div class="carousel-caption">
           <h3>NOKIA</h3>
-          <p>Newastic Nokia </p>
+          <p> Nokia </p>
         </div>
       </div>
 

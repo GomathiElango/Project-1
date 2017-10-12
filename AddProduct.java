@@ -8,7 +8,6 @@ import javax.persistence.Id;
 
 @Entity
 public class AddProduct {
-
 	@Id	
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column
@@ -20,7 +19,10 @@ public class AddProduct {
 	@Column
 	int pprice;
 	@Column
+	int avail;
+	@Column
 	String pdesc;
+	
 	
 	public int getPid() {
 		return pid;
@@ -38,9 +40,11 @@ public class AddProduct {
 		this.pname = pname; 
 	}
 
-	public String getbrand() {
+
+	public String getBrand() {
 		return brand;
 	}
+
 	public void setBrand(String brand) {
 		this.brand = brand;
 	}
@@ -50,6 +54,14 @@ public class AddProduct {
 	}
 	public void setPprice(int pprice) {
 		this.pprice = pprice;
+	}
+	
+	public int getAvail() {
+		return avail;
+	}
+	
+	public void setAvail(int avail) {
+		this.avail = avail;
 	}
 	
 	public String getPdesc() {

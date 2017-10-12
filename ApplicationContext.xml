@@ -9,7 +9,7 @@
         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
         http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
 
-	<!-- -->
+	
 	<tx:annotation-driven />
 
 	<beans:bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"

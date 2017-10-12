@@ -1,5 +1,12 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <head>
+<style>
+ body{
+ margin:0;
+ background:url('http://images.fonearena.com/blog/wp-content/uploads/2015/03/s6edgecolours2.jpg');
+ background-size:cover;
+ }
+ </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 
@@ -25,9 +32,7 @@ $( document ).ready(function() {
   var iframe_height = parseInt($('html').height()); 
   window.parent.postMessage( iframe_height, 'http://bootsnipp.com');
 });
-
-
-    function validate()
+function validate()
     {
     	alert("welcome");
     	var pwd=document.getElementById("pwd");
@@ -42,14 +47,14 @@ $( document ).ready(function() {
     		    		return false;
     		}
     }
-    </script>
+    </script>j
 		
-		<title>Add Product</title>
+		<title>ADD PRODUCT Form</title>
 
     <meta charset="utf-8">
     <meta name="robots" content="noindex">
 
-    <title>Add product Page</title>
+    <title>Product Page</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <style type="text/css">
@@ -116,74 +121,87 @@ input::-webkit-input-placeholder {
 	text-align: center;
 }
 
-body{
-margin:0; 
-background:url('https://cellphones.com.vn/sforum/wp-content/uploads/2016/09/design_hero_large_2x.jpg');
-background-size:cover;
-}
-
     </style>
  
 		<div class="container">
 			<div class="row main">
 				<div class="panel-heading">
 	               <div class="panel-title text-center">
-	              	  <h3><font color="SILVER">Add Product</font></h3>
+	               		<h3>ADD PRODUCT</h3>
 	               		<hr />
 	               	</div>
 	            </div> 
 				<div class="main-login main-center">
 					<form:form action="AddProduct" commandName="AddProduct" method="POST" onsubmit="return validate">
 						
-				
+						<div class="form-group">
+							<label >PRODUCT NAME</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<form:input type="text" class="form-control" name="pname" id="pname"  placeholder="Name" path="pname" />
+								</div>
+							</div>
+						</div>
+							
 									
 
 						<div class="form-group">
-							<label >Enter Product Name</label>
+							<label >PRODUCT BRAND</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-product-hunt" aria-hidden="true"></i></span>
-									<form:input type="text" class="form-control" name="product name" id="product name"  placeholder="product name" path="pname"/>
+									<span class="input-group-addon"><i class="fa fa-first-order" aria-hidden="true"></i></span>
+					<form:input type="text" class="form-control" name="brand" id="brand"  placeholder="BRAND" path="brand" />
 								</div>
 							</div>
 						</div>
+                           
+					
 						
 
-						<div class="form-group">
-							<label >Enter Brand </label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-mobile" aria-hidden="true"></i></span>
-									<form:input type="text" class="form-control" name="brand" id="brand"  placeholder=" brand" path="brand"/>
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label >Enter Product Price</label>
+					<div class="form-group">
+							<label >PRODUCT PRICE</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-inr" aria-hidden="true"></i></span>
-									<form:input type="text" class="form-control" name="pprice" id="pprice"  placeholder="price" path="pprice"/>
+									<form:input type="text" class="form-control" name="pprice" id="pprice"  placeholder="PRICE" path="pprice"/>
 								</div>
 							</div>
 						</div>
 						
 						<div class="form-group">
-							<label >Enter Product Description</label>
+							<label >PRODUCT AVAILABILITY</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-file-text" aria-hidden="true"></i></span>
-									<form:input type="text" class="form-control" name="pdesc" id="pdesc"  placeholder="description" path="pdesc"/>
+									<span class="input-group-addon"><i class="fa fa-money" aria-hidden="true"></i></span>
+									<form:input type="text" class="form-control" name="avail" id="avail"  placeholder=" AVAILABILITY" path="avail" />
 								</div>
 							</div>
 						</div>
 						
-
-						<div class="form-group ">
-							<form:button style="background-color:#000000" type="submit" class="btn btn-primary btn-lg btn-block login-button">Add</form:button>
+						<div class="form-group">
+							<label >PRODUCT DESCRIPTION</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-tasks" aria-hidden="true"></i></span>
+									<form:input type="text" class="form-control" name="pdesc" id="pdesc"  placeholder=" desc" path="pdesc"/>
+								</div>
+							</div>
 						</div>
 						
+						
+
+						<div class="form-group ">
+							<form:button style="background-color:#000000" type="submit" class="btn btn-primary btn-lg btn-block login-button">ADD</form:button>
+						</div>
+						<div class="Add-Product">
+				            <a href="AddProduct.jsp">ADD</a>
+				         </div>
+				         <div class="form-group ">
+							<form:button style="background-color:#000000" type="submit" class="btn btn-primary btn-lg btn-block login-button">VIEW</form:button>
+						</div>
+						
+				       
 					</form:form>
 				</div>
 			</div>

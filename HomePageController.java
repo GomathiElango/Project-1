@@ -1,59 +1,56 @@
 package com.Maven.controller;
-
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
 
-@Controller("HomePageController")
-public class HomePageController {
 
-	@RequestMapping(value="signup")
-	public String register()
+
+	import org.springframework.web.bind.annotation.RequestMapping;
+
+	@Controller("HomePageController")
+
+	public class HomePageController {
+
+	@RequestMapping(value="Register")
+	public String account()  
 	{
-		System.out.println("signup");
-		return "signup";
+		System.out.println("Register");
+		return "Register";
 	}
-}
-@Controller("AboutController")
-class AboutController {
 
-	@RequestMapping(value="about")
-	public String details()
-	{
-		System.out.println("About");
-		return "about";
+			@RequestMapping(value="AboutUs")
+			public String details1()  
+			{
+				System.out.println("AboutUs");
+				return "AboutUs";
+			}
+
+		@RequestMapping(value="contact")
+		public String Contact()  
+		{
+			System.out.println("contact");
+			return "contact";
+		}
+		
+			@RequestMapping(value="login")
+			public String log()  
+			{
+				System.out.println("login");
+				return "login";
+			}
+
+	
+			@RequestMapping(value="AdminLogin")
+			public String details11()  
+			{
+				System.out.println("AdminLogin");
+				return "AdminLogin";
+			}
+
+			@RequestMapping(value="AddProduct")
+			public String details()  
+			{
+				System.out.println("AddProduct");
+				return "AddProduct";
+			}
 	}
-}
+	
 
-@Controller("ContactController")
- class ContactController {
-
-	@RequestMapping(value="contact")
-	public String address()
-	{
-		System.out.println("contact");
-		return "contact";
-	}
-}
-
-@Controller("LoginController")
-class LoginController {
-
-	@RequestMapping(value="login")
-	public String account()
-	{
-		System.out.println("login");
-		return "login";
-	}
-}
-
-
-@Controller("ProductController")
-class ProductController
-{
-	@RequestMapping(value="AddProduct")
-	public String account()
-	{
-		System.out.println("AddProduct");
-		return "AddProduct";
-	}
-}
